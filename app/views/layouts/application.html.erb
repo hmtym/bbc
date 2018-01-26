@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BBS</title>
+    <%= csrf_meta_tags %>
+ 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+ 
+  <body>
+    <header>
+  <h1>ひとことBBS</h1>
+  <ul>
+    <li>
+      <a href="tweets">新規投稿</a>
+      <a href="contacts">お問い合わせ</a>
+    </li>
+  </ul>
+</header>
+    <%= yield %>  <!-- この部分に各ビューファイルの内容が出力される -->
+  </body>
+</html>
